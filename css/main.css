@@ -150,10 +150,8 @@ th{
     }
     .nav__menu_special{
         display: block;
-    }   
-}
-@media (max-width: 500px){
+    }
     .content{
         flex-direction: column;
-    }
+    } 
 }
