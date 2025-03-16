@@ -5,6 +5,7 @@
     --color: rgb(255, 254, 254);
     --background-color: #00568f;
     --height: 40px;
+    --font-color: #337ab7;
 }
 body{
     display:flex;
@@ -111,11 +112,28 @@ footer{
     justify-items: right;
 }
 span > a{
-    color: rgb(13, 98, 246);
+    color: var(--font-color);
     text-decoration: none;
+}
+div > a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+td > a{
+    color: var(--font-color);
+    text-decoration: none;
+}
+td > a:hover{
+    font-weight: 600;
+}
+div > a:hover{
+    font-weight: 600;
 }
 span > a:hover{
     opacity: 0.7;
+}
+th{
+    background-color: #77777744;
 }
 .footer__right-trangChu,
 .footer__right-lienHe{
