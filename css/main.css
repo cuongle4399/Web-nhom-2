@@ -1,7 +1,7 @@
 :root{
     --font-size: 18px;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --max-width: 1460px;
+    --max-width: 1660px;
     --color: rgb(255, 254, 254);
     --background-color: #00568f;
     --height: 40px;
@@ -140,7 +140,7 @@ th{
     font-size: 25px;
     margin-left: 10px;
 }
-@media (max-width: 900px){
+@media (max-width: 800px){
     .nav__Tabmenu-left{
         display: none;
     }
@@ -149,5 +149,10 @@ th{
     }
     .nav__menu_special{
         display: block;
+    }   
+}
+@media (max-width: 500px){
+    .content{
+        flex-direction: column;
     }
 }

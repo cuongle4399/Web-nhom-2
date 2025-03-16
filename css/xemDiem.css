@@ -1,0 +1,53 @@
+:root{
+    --background-Diem: #c7d6f3;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: last baseline;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    width: 100%;
+}
+.form__choose-lable{
+    height: 30px;
+}
+option{
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+.form__choose-btn{
+    padding: 5px 5px;
+}
+table , tr, th, td{
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+.form__Tongket{
+    display: flex;
+    background-color: rgba(255, 166, 0, 0.582);
+    width: 100%;
+}
+.title1{
+background-color: var(--background-Diem);
+color:rgb(11, 11, 11);
+font-weight: bold;
+}
+.form__Tongket-child1{
+    border: 1px solid rgb(44, 42, 42);
+    flex: 2;
+    padding: 5px 5px;
+}
+.form__Tongket-child2{
+    border: 1px solid rgb(44, 42, 42);
+    flex: 1;
+    padding: 5px 5px;
+}
+
+
+
+
+
+
