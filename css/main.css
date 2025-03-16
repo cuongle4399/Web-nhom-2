@@ -1,7 +1,7 @@
 :root{
     --font-size: 18px;
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --max-width: 1660px;
+    --max-width: 1600px;
     --color: rgb(255, 254, 254);
     --background-color: #00568f;
     --height: 40px;
@@ -102,6 +102,7 @@ footer{
    min-width: 100%;
    border-top: #777 solid 1px;
    padding: 20px;
+   box-sizing: border-box;
 }
 .footer__left{
     flex: 3;
