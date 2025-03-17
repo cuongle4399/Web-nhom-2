@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Header-->
+    <header class="header">
+        <!--Logo-->
+        <img class="header__image" src="./image/logoQuyNhon.jpg">
+
+        <nav class="header__nav">
+            <!--Bên trái-->
+            <ul class="header__nav-left">
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="https://tinchi.qnu.edu.vn/Login/index">Đăng ký học phần</a></li>
+                <li><a href="thoikhoabieugiangvien.html">Thời khóa biểu giảng viên</a></li>
+            </ul>
+
+            <!--Bên phải-->
+            <ul class="header__nav-right">
+                <li><a href="login.html">Đăng nhập</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Main-->
+    <main class="main">
+        <!--Sidebar-->
+        <div class="main__sidebar">
+            <div class="main__sidebar-items"><a href="tintuc.html">Tin tức</a></div>
+            <div class="main__sidebar-items"><a href="thongbaochung.html">Thông báo chung</a></div>
+            <div class="main__sidebar-items"><a href="cacquydinh.html">Các quy định</a></div>
+            <div class="main__sidebar-items"><a href="thongbaohocphi.html">Thông báo học phí</a></div>
+        </div>
+
+        <!--Content-->
+        <div class="main__content">
+            <div class="main__content-title">
+                <p>Thời Khóa Biểu Giảng Viên</p>
+            </div>
+
+            <div class="main__content-select">
+                <div class="main__content-select-items">
+                    Năm học:
+                    <select name="year" id="year">
+                        <option value="nam1">2020-2021</option>
+                        <option value="nam2">2021-2022</option>
+                        <option value="nam3">2022-2023</option>
+                        <option value="nam4">2023-2024</option>
+                    </select>
+                </div>
+    
+                <div class="main__content-select-items">
+                    Học kỳ:
+                    <select name="semester" id="semester">
+                        <option value="hk1">Học kỳ 1</option>
+                        <option value="hk2">Học kỳ 2</option>
+                        <option value="hk3">Học kỳ 3</option>
+                        <option value="hk4">Học kỳ 4</option>
+                    </select>
+                </div>
+    
+                <div class="main__content-select-items">
+                    Khoa:
+                    <select name="department" id="department">
+                        <option value="k1">Khoa 1</option>
+                        <option value="k2">Khoa 2</option>
+                        <option value="k3">Khoa 3</option>
+                        <option value="k4">Khoa 4</option>
+                    </select>
+                </div>  
+                
+                <div class="main__content-select-items">
+                    <input type="text" placeholder="Mã CBGV hoặc họ tên">
+                    <button class="find" type="button">Lọc dữ liệu</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer__left">
+            <p>Copyright © 2025, TRƯỜNG ĐẠI HỌC QUY NHƠN</p>
+            <p>Địa chỉ: 170 An Dương Vương, Tp. Quy Nhơn</p>
+            <p>Điện thoại: (84-56) 3846156; Fax: (84-56) 3846089</p>
+            <p>Email: <a href="mailto:web@qnu.edu.vn">web@qnu.edu.vn</a></p>
+            <p>Website: <a href="mailto:http://www.qnu.edu.vn">http://www.qnu.edu.vn</a></p>
+        </div>
+
+        <div class="footer__right">
+            <div class="footer__right-items">
+                <a href="">TRANG CHỦ</a>
+                <a href="">LIÊN HỆ</a>
+            </div>
+
+            <div class="footer__right-items">
+                <p>Được phát triển bởi <a href="">Nhóm 2</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

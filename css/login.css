@@ -1,0 +1,62 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: #fff;
+}
+.form_login {
+    display:flex;
+    height:100vh;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.form_login__login {
+    width:300px;
+    height:350px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid;
+} 
+
+.form_login__login-logo {
+    margin-top:10px;
+    margin-bottom: 30px;
+}
+
+.form_login__login-form {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-top: 5px solid;
+    padding-top:30px;
+}
+
+.form_login__login-form input {
+    margin-top: 8px;
+    padding:8px 5px;
+}
+
+.form_login__login-form button {
+    margin-top:30px;
+    padding:8px 10px;
+    border-radius: 7px;
+    border:2px solid;
+    background-color: #333;
+    color:#fff;
+}
+
+
+@media only screen and (max-width:740px) {
+    .form_login {
+        flex-direction: column;
+    }
+
+    .form_login__image {
+        display:none;
+    }
+}

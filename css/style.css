@@ -1,0 +1,183 @@
+:root{
+    --font-size: 18px;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --max-width: 1500px;
+    --color: rgb(255, 254, 254);
+    --background-color: #00568f;
+    --height: 40px;
+    --font-color: #337ab7;
+}
+
+* {
+    padding:0;
+    margin:0;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    max-width: var(--max-width);
+}
+
+.header a, main a, footer a {
+    text-decoration: none;
+}
+
+.header a, .main a, .footer a, .main__content-title {
+    color: var(--color);
+}
+
+.header a:hover, main a:hover, footer a:hover {
+    color: var(--font-color);
+}
+
+.header__image {
+    width: 100%;
+    max-width: var(--max-width); 
+    height: auto; 
+}
+
+.header__nav {
+    height:40px;
+    background-color: var(--background-color);
+    display:flex;
+    justify-content:space-between;
+}
+
+.header__nav-left, .header__nav-right {
+    display:flex;
+    padding:8px 0;
+    list-style:none;
+}
+
+.header__nav-left li {
+    padding-left: 25px;
+}
+
+.header__nav-right li {
+    padding-right: 15px;
+}
+
+
+
+.main {
+    
+    display:flex;
+    justify-content: space-between;
+}
+
+.main__sidebar {
+    flex-basis:20%; /*Thay đổi kích thước thanh bên*/
+}
+
+.main__sidebar-items, .main__content-title {
+    margin-top:5px;
+}
+
+.main__sidebar-items {
+    background-color: var(--background-color);
+    padding:8px 0;
+} 
+
+.main__sidebar-items a {
+    padding-left:25px;
+}
+
+.main__content {
+    flex-basis:79%; /*Thay đổi kích thước nội dung chính của phần thân*/
+}
+
+.main__content a {
+    color: var(--font-color);
+}
+
+.main__content-title {
+    background-color: var(--background-color);
+    padding:8px 0 8px 10px;
+}
+
+
+
+.footer {
+    margin-top:100px;
+    border-top: 2px solid;
+    padding-top:10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer__left a, .footer__right-items a {
+    color: var(--font-color);
+}
+
+.footer__right {
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+
+.footer__right-items:first-child {
+    display:flex;
+    justify-content: space-between;
+}
+
+.footer div:first-child, .footer div:last-child {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .header__nav ul {
+        display:none;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__left, .footer__right {
+        margin: 0 auto !important;
+        margin-bottom: 20px !important;
+    }
+
+}
+
+/*index.html*/
+.main__content-content-items-date {
+    color: darkgray;
+    text-align: right;
+}
+
+.main__content-content-items, .main__content-number_of_page {
+    margin: 0 8px
+}
+
+.main__content-number_of_page {
+    font-weight: bold;
+}
+
+/*thoikhoabieugiangvien.html*/
+.main__content-select {
+    display: flex;
+    margin-top: 5px;
+}
+
+.main__content-select-items {
+    margin-left: 8px;
+    padding-right: 10px;
+}
+
+.main__content-select-items input {
+    padding: 5px 8px;
+}
