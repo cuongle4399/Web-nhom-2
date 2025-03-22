@@ -1,0 +1,93 @@
+.panel{
+    width: 100%;
+}
+.main-content {
+    display: flex;
+    background-color: var(--color);
+    border-radius: 5px;
+    width: 100%;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-between; /* Căn giữa theo chiều dọc */
+    align-items: baseline; /* Căn giữa nội dung bên trong */
+}
+
+.panel-heading {
+    font-size: 18px;
+    margin-bottom: 5px;
+    background-color: var(--background-color);
+    color: var(--color);
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 10px;
+    background-color: var(--color);
+    border-radius: 0 0 5px 5px;
+}
+.reload_kqdk{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    text-align: left;
+    font-weight: bold;
+}
+.reload_1{
+    float: left;
+    margin-left: 3px;
+}
+.reload_mau02{
+    width:15px;
+    height: 15px;
+    background: yellow;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-right: 2px;
+}
+.reload_2, .reload_3{
+    float: left;
+    margin-left: 3px;
+    width: 100px;
+}
+.reload_mau03{
+    width: 15px;
+    height: 15px;
+    background: red;
+    border: 1px solid #dfdfdf;
+    float: left;
+    margin-right: 2px;
+}
+
+select {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    
+}
+
+th {
+    background-color: var(--background-color);
+    color: var(--color);
+}
+
+td {
+    text-align: center;
+}
+legend{
+    color: blue;
+    font-weight: bold;
+}
