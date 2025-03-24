@@ -58,6 +58,7 @@ input {
     flex-direction: column;
     justify-content: center;
     margin-top: 30px;
+    padding: 5px 50px;
 }
 
 .form__button-red {
