@@ -57,27 +57,28 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 30px;
 }
 
 .form__button-red {
     margin-bottom: 20px;
-    padding: 10px 20px;
     background: rgb(225, 53, 53);
     color: white;
     border: none;
     border-radius: 3px;
     font-size: 20px;
     font-weight: bolder;
+    padding: 10px 100px;
 }
 
 .form__button-blue {
     margin-bottom: 20px;
-    padding: 10px 20px;
     background: rgb(57, 135, 220);
     color: white;
     border: none;
     border-radius: 3px;
     font-size: 20px;
     font-weight: bolder;
+    padding: 10px 65px;
 }
