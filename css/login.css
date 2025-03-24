@@ -1,62 +1,83 @@
-* {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
-}
-
 body {
-    background-color: #fff;
-}
-.form_login {
-    display:flex;
-    height:100vh;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
+    height: 100vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    background: #43494548;
+    margin: 0; /* Xóa margin mặc định */
+    background: linear-gradient(45deg, #27aae2, #96a1c8, #0d57e2);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+}
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-.form_login__login {
-    width:300px;
-    height:350px;
-    display:flex;
+.form {
+    width: 400px;
+    height: 330px;
+    background: whitesmoke;
+    border: 1px solid rgb(84, 76, 76);
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.form__dntk {
+    text-align: center;
+    font-size: 30px;
+}
+
+.form__dash {
+    display: flex;
+    justify-content: center;
+}
+
+.form__tkmk {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    border:2px solid;
-} 
-
-.form_login__login-logo {
-    margin-top:10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
 }
 
-.form_login__login-form {
-    display:flex;
+label {
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 5px 10px;
+    border: 1px solid rgb(42, 39, 39);
+    border-radius: 2px;
+    margin-bottom: 5px;
+}
+
+.form__button {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-
-    border-top: 5px solid;
-    padding-top:30px;
+    justify-content: center;
+    margin-top: 30px;
 }
 
-.form_login__login-form input {
-    margin-top: 8px;
-    padding:8px 5px;
+.form__button-red {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: rgb(225, 53, 53);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bolder;
 }
 
-.form_login__login-form button {
-    margin-top:30px;
-    padding:8px 10px;
-    border-radius: 7px;
-    border:2px solid;
-    background-color: #333;
-    color:#fff;
-}
-
-
-@media only screen and (max-width:740px) {
-    .form_login {
-        flex-direction: column;
-    }
-
-    .form_login__image {
-        display:none;
-    }
+.form__button-blue {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background: rgb(57, 135, 220);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: bolder;
 }
