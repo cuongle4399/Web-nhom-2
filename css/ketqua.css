@@ -5,7 +5,7 @@
   --color: rgb(255, 254, 254);
   --background-color: #00568f;
   --height: 40px;
-  --font-color: #337ab7;
+  --font-color: #093155;
 }
 body{
   display:flex;
@@ -27,17 +27,13 @@ body{
   max-width: var(--max-width);
   width: 100%;
 }
-li{
-  list-style: none;  
-}
+
 li > a{
   text-decoration: none;
   margin : 0px 5px;   
   color:var(--color); 
 }
-.form__nav{
-  min-width: 100%;
-}
+
 .nav__Tabmenu{
   display: flex;
   justify-content: space-between;
@@ -48,21 +44,13 @@ li > a{
   display: flex;
   justify-content: left;
 }
-.nav__menu_special{
-  display: none;
-  padding: 0px 15px;
-}
+
 .nav__Tabmenu-right{
   display: flex;
   justify-content: right;
   align-items: center;
 }
-.Tabmenu__right-user:hover,
-.Tabmenu__left-thoiKhoaBieu:hover,
-.Tabmenu__left-dangKyHocPhan:hover,
-.Tabmenu__left-trangChu:hover{
-opacity: 0.3;
-}
+
 .content__menu-mucluc{
   background-color: var(--background-color);
   color: var(--color);
@@ -104,14 +92,7 @@ footer{
  padding: 20px;
  box-sizing: border-box;
 }
-.footer__left{
-  flex: 3;
-  justify-items: left;
-}
-.footer__right{
-  flex: 1;
-  justify-items: right;
-}
+
 span > a{
   color: var(--font-color);
   text-decoration: none;
@@ -141,20 +122,7 @@ th{
   font-size: 25px;
   margin-left: 10px;
 }
-@media (max-width: 800px){
-  .nav__Tabmenu-left{
-      display: none;
-  }
-  .nav__Tabmenu-right{
-      display: none;
-  }
-  .nav__menu_special{
-      display: block;
-  }
-  .content{
-      flex-direction: column;
-  } 
-}
+
 /* CSS bổ sung cho Kết quả đăng ký học phần */
 .content__main header {
   background-color: var(--background-color);
